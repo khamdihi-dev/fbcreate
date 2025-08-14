@@ -39,3 +39,8 @@ git clone https://github.com/khamdihi-dev/fbcreate
 cd fbcreate
 pip install requests faker
 python fbcreate.py
+```
+
+## cek akun aktif
+```bash
+python fbchek.py
