@@ -1,6 +1,6 @@
 import requests
 import random
-import time,sys
+import time,sys,re
 from faker import Faker
 
 def get_fake_desktop_ua():
@@ -221,4 +221,5 @@ while True:
         cookie_dict, cookie_str = parse_set_cookie(c.headers)
         print(f'[INFO] [+] Name => {first_name} {last_name}\n[INFO] [+] Cookie => {cookie_str}\n')
         open('akun_id','a').write(f'{cookie_str}|{password}\n')
+
         delai(120)
